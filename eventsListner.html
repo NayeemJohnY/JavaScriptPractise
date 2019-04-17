@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> Event Listener</title>
+</head>
+<body>
+<p id= "outer"> Start 2 Event
+<button id="demo" > Start Event</button>
+</p>
+</html>
+<script>
+var btn=document.getElementById("demo");
+btn.addEventListener("click",Helloalert,true);
+
+var outer=document.getElementById("outer");
+outer.addEventListener("click",Helloalert,false);
+function Helloalert()
+{
+alert(Math.random());
+}
+</script>
+

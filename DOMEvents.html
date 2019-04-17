@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<title> Arrays JAVASCRIPT</title>
+
+</head>
+<body>
+<div id="demo">
+<p> When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen.
+To accomplish that, the browser builds the Document Object Model of that page, which is an object oriented model of its logical structure.</p>
+
+<p><h1>JavaScript can be used to manipulate the DOM of a page dynamically to add, delete and modify elements.</h1></p>
+<p>
+There is a predefined document object in JavaScript, which can be used to access all elements on the DOM.
+In other words, the document object is the owner (or root) of all objects in your webpage.
+So, if you want to access objects in an HTML page, you always start with accessing the document object.
+<br>
+document.body.innerHTML = "Some";
+</p>
+</div>
+<script> 
+var para=document.getElementById("demo");
+//document.write(para.length);
+var child=para.childNodes;
+document.write(child.length);
+
+
+
+
+</script>
+
+</body>
+</html>

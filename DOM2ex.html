@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <div id ="demo"style="width:5000px">
+     some text
+    </div>
+<a href="http://www.example.com">Some link</a>
+
+<img id="myimg" src="orange.png" alt="Nayeem" />
+    <script>
+     var a = document.getElementById("demo");
+	   a.style.color = "#33EA73";
+  a.style.width = "25px";
+     /*var arr = a.childNodes;
+     for(var x=0;x<arr.length;x++) {
+       arr[x].innerHTML = "new text";
+     } <p style="width:1000px">some text</p>
+      <p>some other text</p>
+	 document.write(arr.length);*/
+	 var el = document.getElementsByTagName("a");
+	el[0].href = "http://www.sololearn.com";
+	 var e2 = document.getElementById("myimg");
+e2.src = "apple.png"; e2.alt="john";
+    </script>
+
+  </body>
+</html>

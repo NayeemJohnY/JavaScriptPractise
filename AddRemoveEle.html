@@ -1,0 +1,25 @@
+<html>
+  <body>
+  <div id ="demo">some content</div>
+
+<script>
+  //creating a new paragraph
+  var p = document.createElement("p");
+  var node = document.createTextNode("Some new text");
+  var div1 =document.createElement("div")
+  var node2=document.createTextNode("HI Nayeem");
+  //adding the text to the paragraph
+  p.appendChild(node);
+  div1.appendChild(node2);
+
+  var div = document.getElementById("demo");
+  //adding the paragraph to the div
+  div.appendChild(p);
+  div.appendChild(div1);
+  //div.removeChild(p);
+  //p.parentNode.removeChild(div1);
+ div.replaceChild(p,div1);
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+<title> Objects in JAVASCRIPT</title>
+
+</head>
+<body>
+
+<script> 
+var student={
+name:"Vasanth",
+Rollno: 52
+};
+document.write(student.name);
+document.write(student.name.length+"<br/>");
+document.write(student['Rollno']);
+document.write("<br>");
+
+
+function createObj(name, age)
+{
+	this.name=name;
+	this.age=age;	
+	this.yearofbirth=bornyear;
+	this.average=function average(mark)
+	{
+		if(mark>35)
+			this.result="Pass";
+		else
+			this.result ="Fail";
+	}
+
+}
+function bornyear()
+{
+ return(2018-this.age);
+}
+
+
+var stud1= new createObj("vino", 24);
+var stud2= new createObj("john", 24);
+document.write(stud1.name);
+document.write(stud1.yearofbirth());
+stud1.average(70);
+document.write(stud1.result);
+document.write("<br>");
+document.write(stud2.name);
+document.write(stud2.yearofbirth());
+stud2.average(30);
+document.write(stud2.result);
+
+</script>
+
+</body>
+</html>
